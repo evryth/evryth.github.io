@@ -8,22 +8,47 @@
   <meta name="robots" content="index,follow">
 
   <style>
-  .typography {
-      font-family: 'Poppins', sans-serif; /* Modern, clean font */
-      font-size: 48px; /* Large, attention-grabbing */
-      font-weight: 700; /* Bold for emphasis */
-      color: #2c3e50; /* Dark, professional color */
-      letter-spacing: 0.05em; /* Slight letter spacing for readability */
-      text-transform: uppercase; /* Make all letters uppercase */
-      text-align: center; /* Center the text */
-      margin: 50px 0; /* Add some space around the text */
-      background: linear-gradient(90deg, #f39c12, #f1c40f); /* Gradient background */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; /* Gradient fills the text */
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300&display=swap');
+
+.typography {
+    font-family: 'Playfair Display', serif; /* Elegant, classic serif font */
+    font-size: 52px; /* Slightly larger font size for impact */
+    font-weight: 700; /* Bold for emphasis */
+    color: #2d3436; /* Dark charcoal color for sophistication */
+    letter-spacing: 0.05em; /* Refined letter spacing */
+    text-transform: none; /* No uppercase for a more professional look */
+    text-align: center; /* Center-align text */
+    margin: 40px 0; /* Balanced space around the text */
+    line-height: 1.2; /* Good line height for readability */
+    position: relative;
+}
+
+.typography::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: #f39c12; /* Add a decorative underline */
+    transform: translateX(-50%);
+}
+
+.typography span {
+    font-family: 'Raleway', sans-serif; /* Modern sans-serif for contrast */
+    font-size: 18px; /* Subtext font size */
+    font-weight: 300; /* Lighter subtext */
+    display: block;
+    color: #7f8c8d; /* Subtle gray for contrast */
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+}
   </style>
 </head>
 <body>
-  <h1 class="typography">Every Best Deals</h1>
+  <div class="typography">
+    Every Deals
+    <span>Exclusive Offers for You</span>
+</div>
 </body>
 </html>
