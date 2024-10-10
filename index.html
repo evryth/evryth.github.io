@@ -43,6 +43,41 @@
     letter-spacing: 0.1em;
     margin-top: 10px;
 }
+
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+.product-card {
+    background-color: #ffffff; /* White background for product cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px 20px; /* Padding inside cards */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+}
+    
   </style>
 </head>
 <body>
@@ -50,5 +85,17 @@
     Every Deals
     <span>Exclusive Offers for You</span>
 </div>
+
+
+  <div class="container">
+        <div class="product-card">Product 1</div>
+        <div class="product-card">Product 2</div>
+        <div class="product-card">Product 3</div>
+        <div class="product-card">Product 4</div>
+        <div class="product-card">Product 5</div>
+        <div class="product-card">Product 6</div>
+        <div class="product-card">Product 7</div>
+        <div class="product-card">Product 8</div>
+    </div>
 </body>
 </html>
